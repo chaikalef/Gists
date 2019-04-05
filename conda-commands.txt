@@ -2,6 +2,7 @@ http://qaru.site/questions/265341/should-i-use-conda-or-conda-forge-when-creatin
 conda config --append channels anaconda
 conda config --append channels pytorch
 conda config --append channels conda-forge
+conda config --get channels
 
 conda install autopep8 pandas matplotlib qt pyqt pyqtgraph conda numpy pip python opencv git pillow cmake -y
 conda install click flask flake8 mypy pydocstyle pytest pylint pep8 seaborn numba setuptools sortedcollections sortedcontainers typing pyinstaller h5py -y
