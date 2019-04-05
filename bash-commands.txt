@@ -1,0 +1,38 @@
+ssh -X <login>@<ip>:<folder>
+
+nvidia-smi
+
+kill -TERM <PID>
+
+scp -r <PATH_FROM> <PATH_TO>
+Возможная форма PATH: <login>@<ip>:<folder>
+Example: chaikalef@192.168.0.10:
+
+-- disk usage --
+http://www.opennet.ru/man.shtml?topic=du&category=1&russian=0
+du -hs              // подсчитать итоговый размер занимаемый текущим каталогом
+du -hs *            // подсчитать размер занимаемый каталогами (+ размеры субкаталогов)
+du -h --max-depth=1 // подсчитать размер занимаемый каталогами (+ размеры субкаталогов), включая скрытые
+
+-- disk free --
+https://ru.wikipedia.org/wiki/Df
+df -hT // показывает список всех файловых систем по именам устройств, сообщает их размер, тип
+
+-- remove --
+https://ru.wikipedia.org/wiki/Rm
+rm -rf <что удалить> // рекурсивно удалить без подтверждения и кода ошибочного завершения
+
+-- nano --
+https://help.ubuntu.ru/wiki/nano
+
+http://www.electronick.org.ua/articles/linux/kak-ispolzovat-komandu-grep-v-linux/
+
+https://ru.wikipedia.org/wiki/Sort
+
+https://ru.wikipedia.org/wiki/SCP
+
+https://ru.wikipedia.org/wiki/Kill
+
+http://mydebianblog.blogspot.com/2006/12/ssh.html
+
+https://andreyv.ru/nvidia-smi-poleznye-komandy.html
