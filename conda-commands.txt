@@ -1,0 +1,44 @@
+http://qaru.site/questions/265341/should-i-use-conda-or-conda-forge-when-creating-anaconda-python-environments
+conda config --append channels anaconda
+conda config --append channels pytorch
+conda config --append channels conda-forge
+
+conda install autopep8 pandas matplotlib qt pyqt pyqtgraph conda numpy pip python opencv git pillow cmake -y
+conda install click flask flake8 mypy pydocstyle pytest pylint pep8 seaborn numba setuptools sortedcollections sortedcontainers typing pyinstaller h5py -y
+conda install autopep8 pandas matplotlib qt pyqt pyqtgraph conda numpy pip python opencv git pillow cmake click flask flake8 mypy pydocstyle pytest pylint pep8 seaborn numba setuptools sortedcollections sortedcontainers typing pyinstaller h5py -y
+
+conda uninstall tensorflow keras tensorflow-gpu keras-gpu tensorflow-tensorboard pytorch torchvision cudatoolkit pytorch-cpu torchvision-cpu -y
+
+
+conda create --name keras -y
+conda activate keras
+conda install tensorflow-gpu keras-gpu tensorflow-tensorboard -y
+conda install tensorflow-gpu keras-gpu tensorflow-tensorboard autopep8 pandas matplotlib qt pyqt pyqtgraph conda numpy pip python opencv git pillow cmake click flask flake8 mypy pydocstyle pytest pylint pep8 seaborn numba setuptools sortedcollections sortedcontainers typing pyinstaller h5py -y
+
+
+conda create --name pytorch -y
+conda activate pytorch
+conda install pytorch torchvision -y
+conda install pytorch torchvision autopep8 pandas matplotlib qt pyqt pyqtgraph conda numpy pip python opencv git pillow cmake click flask flake8 mypy pydocstyle pytest pylint pep8 seaborn numba setuptools sortedcollections sortedcontainers typing pyinstaller h5py -y
+
+https://pytorch.org/get-started/locally/
+conda install pytorch torchvision cudatoolkit=8.0
+conda install pytorch torchvision cudatoolkit=9.0
+conda install pytorch torchvision cudatoolkit=10.0
+conda install pytorch-cpu torchvision-cpu
+
+
+conda create --name cpp -y
+conda activate cpp
+conda install valgrind gcc -y
+
+
+https://stackoverflow.com/questions/38280739/how-to-make-conda-virtual-environments-persistent-and-available-for-tools-such-a
+conda activate keras
+python -m ipykernel install --user --name keras --display-name "keras"
+OR
+ipython kernel install --user --name keras
+conda activate pytorch
+python -m ipykernel install --user --name pytorch --display-name "pytorch"
+OR
+ipython kernel install --user --name pytorch
