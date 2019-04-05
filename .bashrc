@@ -1,7 +1,7 @@
 export PYTHONPATH=<path to python projects>
 
 # User specific aliases and functions
-alias clr='clear '
+alias cls='clear '
 
 alias gcl='git clone '
 alias gs='git status '
