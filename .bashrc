@@ -1,3 +1,5 @@
+export PYTHONPATH=<path to python projects>
+
 # User specific aliases and functions
 alias clr='clear '
 
