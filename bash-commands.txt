@@ -1,5 +1,7 @@
 ssh -X <login>@<ip>:<folder>
 
+autopep8 -r --in-place <folder_name>
+
 nvidia-smi
 
 kill -TERM <PID>
