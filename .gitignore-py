@@ -9,6 +9,8 @@ tests/**/.vscode
 *.pbtxt
 *.weights
 *events*
+*.pickle
+conf.*.json
 src/**/*.h5
 tests/**/*.h5
 src/**/*.pb
@@ -19,6 +21,10 @@ src/**/*.weights
 tests/**/*.weights
 src/**/*events*
 tests/**/*events*
+src/**/conf.*.json
+tests/**/conf.*.json
+src/**/*.pickle
+tests/**/*.pickle
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
