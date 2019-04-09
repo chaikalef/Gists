@@ -10,7 +10,6 @@ tests/**/.vscode
 *.weights
 *events*
 *.pickle
-conf.*.json
 src/**/*.h5
 tests/**/*.h5
 src/**/*.pb
@@ -21,10 +20,16 @@ src/**/*.weights
 tests/**/*.weights
 src/**/*events*
 tests/**/*events*
-src/**/conf.*.json
-tests/**/conf.*.json
 src/**/*.pickle
 tests/**/*.pickle
+
+# For quant
+conf.*.json
+*.npy
+src/**/conf.*.json
+tests/**/conf.*.json
+src/**/*.npy
+tests/**/*.npy
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
