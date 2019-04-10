@@ -4,17 +4,18 @@ conda config --append channels pytorch
 conda config --append channels conda-forge
 conda config --get channels
 
+
 conda install autopep8 pandas matplotlib qt pyqt pyqtgraph conda numpy pip python opencv git pillow cmake -y
 conda install click flask flake8 mypy pydocstyle pytest pylint pep8 seaborn numba setuptools sortedcollections sortedcontainers typing pyinstaller h5py -y
 conda install autopep8 pandas matplotlib qt pyqt pyqtgraph conda numpy pip python opencv git pillow cmake click flask flake8 mypy pydocstyle pytest pylint pep8 seaborn numba setuptools sortedcollections sortedcontainers typing pyinstaller h5py -y
 
-conda uninstall tensorflow keras tensorflow-gpu keras-gpu tensorflow-tensorboard pytorch torchvision cudatoolkit pytorch-cpu torchvision-cpu -y
+conda uninstall tensorflow keras tensorflow-gpu keras-gpu tensorboard pytorch torchvision cudatoolkit pytorch-cpu torchvision-cpu -y
 
 
 conda create --name keras -y
 conda activate keras
-conda install tensorflow-gpu keras-gpu tensorflow-tensorboard -y
-conda install tensorflow-gpu keras-gpu tensorflow-tensorboard autopep8 pandas matplotlib qt pyqt pyqtgraph conda numpy pip python opencv git pillow cmake click flask flake8 mypy pydocstyle pytest pylint pep8 seaborn numba setuptools sortedcollections sortedcontainers typing pyinstaller h5py -y
+conda install tensorflow-gpu keras-gpu tensorboard -y
+conda install tensorflow-gpu keras-gpu tensorboard autopep8 pandas matplotlib qt pyqt pyqtgraph conda numpy pip python opencv git pillow cmake click flask flake8 mypy pydocstyle pytest pylint pep8 seaborn numba setuptools sortedcollections sortedcontainers typing pyinstaller h5py -y
 
 
 conda create --name pytorch -y
