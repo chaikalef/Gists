@@ -32,7 +32,7 @@ conda install pytorch-cpu torchvision-cpu
 
 conda create --name cpp -y
 conda activate cpp
-conda install valgrind gcc -y
+conda install valgrind gcc conda git cmake -y
 
 
 https://stackoverflow.com/questions/38280739/how-to-make-conda-virtual-environments-persistent-and-available-for-tools-such-a
