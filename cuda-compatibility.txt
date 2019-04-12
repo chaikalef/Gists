@@ -1,1 +1,2 @@
 https://docs.nvidia.com/deploy/cuda-compatibility/index.html#binary-compatibility
+https://docs.nvidia.com/deeplearning/sdk/cudnn-support-matrix/index.html
