@@ -1,6 +1,0 @@
-- compatibility-
-https://docs.nvidia.com/deploy/cuda-compatibility/index.html#binary-compatibility
-https://docs.nvidia.com/deeplearning/sdk/cudnn-support-matrix/index.html
-
-- install -
-https://linuxconfig.org/how-to-install-the-nvidia-drivers-on-ubuntu-18-04-bionic-beaver-linux
