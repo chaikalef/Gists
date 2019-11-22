@@ -5,9 +5,9 @@ conda config --append channels conda-forge
 conda config --get channels
 
 
-conda install autopep8 pandas matplotlib qt pyqt pyqtgraph conda numpy pip python opencv git pillow cmake make cython -y
-conda install click flask flake8 mypy pydocstyle pytest pylint pep8 seaborn numba setuptools sortedcollections sortedcontainers typing pyinstaller h5py -y
-conda install autopep8 pandas matplotlib qt pyqt pyqtgraph conda numpy pip python opencv git pillow cmake make cython click flask flake8 mypy pydocstyle pytest pylint pep8 seaborn numba setuptools sortedcollections sortedcontainers typing pyinstaller h5py -y
+conda install jupyter yapf jupyter_contrib_nbextensions autopep8 pandas matplotlib qt pyqt pyqtgraph conda numpy pip python opencv git pillow cmake make cython -y
+conda install jupyter yapf jupyter_contrib_nbextensions click flask flake8 mypy pydocstyle pytest pylint pep8 seaborn numba setuptools sortedcollections sortedcontainers typing pyinstaller h5py -y
+conda install jupyter yapf jupyter_contrib_nbextensions autopep8 pandas matplotlib qt pyqt pyqtgraph conda numpy pip python opencv git pillow cmake make cython click flask flake8 mypy pydocstyle pytest pylint pep8 seaborn numba setuptools sortedcollections sortedcontainers typing pyinstaller h5py -y
 
 conda uninstall tensorflow keras tensorflow-gpu keras-gpu tensorboard pytorch torchvision cudatoolkit pytorch-cpu torchvision-cpu -y
 
@@ -15,13 +15,13 @@ conda uninstall tensorflow keras tensorflow-gpu keras-gpu tensorboard pytorch to
 conda create --name keras -y
 conda activate keras
 conda install tensorflow-gpu keras-gpu tensorboard -y
-conda install tensorflow-gpu keras-gpu tensorboard autopep8 pandas matplotlib qt pyqt pyqtgraph conda numpy pip python opencv git pillow cmake make cython click flask flake8 mypy pydocstyle pytest pylint pep8 seaborn numba setuptools sortedcollections sortedcontainers typing pyinstaller h5py -y
+conda install tensorflow-gpu keras-gpu tensorboard jupyter yapf jupyter_contrib_nbextensions autopep8 pandas matplotlib qt pyqt pyqtgraph conda numpy pip python opencv git pillow cmake make cython click flask flake8 mypy pydocstyle pytest pylint pep8 seaborn numba setuptools sortedcollections sortedcontainers typing pyinstaller h5py -y
 
 
 conda create --name torch -y
 conda activate torch
 conda install pytorch torchvision -y
-conda install pytorch torchvision autopep8 pandas matplotlib qt pyqt pyqtgraph conda numpy pip python opencv git pillow cmake make cython click flask flake8 mypy pydocstyle pytest pylint pep8 seaborn numba setuptools sortedcollections sortedcontainers typing pyinstaller h5py -y
+conda install pytorch torchvision jupyter yapf jupyter_contrib_nbextensions autopep8 pandas matplotlib qt pyqt pyqtgraph conda numpy pip python opencv git pillow cmake make cython click flask flake8 mypy pydocstyle pytest pylint pep8 seaborn numba setuptools sortedcollections sortedcontainers typing pyinstaller h5py -y
 
 https://pytorch.org/get-started/locally/
 conda install pytorch torchvision cudatoolkit=8.0
@@ -44,3 +44,5 @@ conda activate pytorch
 python -m ipykernel install --user --name torch --display-name "torch"
 OR
 ipython kernel install --user --name torch
+
+conda env remove -n env_name
