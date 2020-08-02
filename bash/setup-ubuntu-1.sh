@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 cat << EOT >> .bashrc
 # User specific aliases and functions
 alias cls='clear '
